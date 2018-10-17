@@ -1,0 +1,268 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+h2 {
+	letter-spacing: 3px;
+	margin-bottom: 15px;
+}
+
+.clear:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.logo {
+	width: 140px;
+	height: 140px;
+	background-color: darkgrey;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.logo > img {
+	width: 100%;
+	height: 100%;
+}
+
+
+.nav,
+.banner,
+.about,
+.services,
+.projects,
+.gallery,
+.footer {
+	padding: 30px;
+}
+
+.nav {
+	background-color: #54B7A3;
+	height: 100vh;
+	width: 200px;
+	position: fixed;
+	/*background: url('../images/nav-background.jpg') no-repeat;
+	background-size: cover;
+	background-blend-mode: screen;*/
+}
+
+.nav ul > li {
+	list-style: none;
+	background-color: lightblue;
+	margin-bottom: 5px;
+	line-height: 48px;
+	text-align: center;
+	padding-top: 7px;
+}
+
+.nav ul > li > a {
+	text-decoration: none;
+	padding: 15px 45px;
+}
+
+.nav ul > li:hover {
+	background-color: grey;
+	box-shadow: 0 0 10px 2px #333;
+}
+.nav li > a:hover > i {
+	color: #F5F5F5;
+}
+
+.nav li > a > i {
+	font-size: 1.8em;
+	color: #FC7217;
+}
+/*.nav ul .active {
+	background-color: grey;
+	box-shadow: 0 0 10px 2px #333;
+	color: #F5F5F5;
+}*/
+.main {
+	background-color: lightgrey;
+	margin-left: 200px;
+}
+
+.banner {
+	background-color: skyblue;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*position: relative;*/
+	background: url('../images/banner.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-blend-mode: screen;
+}
+
+.box {
+	border: 10px solid skyblue;
+	text-align: center;
+	width: 40%;
+	padding: 40px;
+/*	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+	color: orange;
+}
+.box h1 {
+	letter-spacing: 3px;
+	font-size: 3em;
+	margin-bottom: 10px;
+	text-shadow: 2px 2px black;
+}
+.box p {
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px #333;
+	/*color: #333;*/
+}
+.about {
+	background-color: indianred;
+	/*height: 700px;*/
+	height: 100vh;
+}
+.about > p {
+	margin-bottom: 20px;
+}
+.about > img {
+	width: 100%;
+	height: 40%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.about > h3 {
+	margin-bottom: 10px;
+}
+.services {
+	background-color: powderblue;
+	/*height: 300px;*/
+	height: 50vh;
+}
+.services .column, .gallery .column {
+	/*border: 1px solid black;*/
+	padding: 5px;
+	width: 31%;
+	margin-left: 1.16%;
+	margin-right: 1.16%;
+	float: left;
+	min-height: 200px;
+}
+.services .column *, .gallery .column * {
+	margin-bottom: 10px;
+}
+img[alt*="service"] {
+	/*border: 1px solid black;*/
+	width: 60px;
+	height: 60px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+.services p {
+	overflow: hidden;
+}
+.services .no-top {
+	margin-top: 0;
+}
+
+.banner1 {
+	/*background-color: skyblue;*/
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*position: relative;*/
+	background: url('../images/our-team.jpeg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-blend-mode: screen;
+}
+.banner1 .team-wrapper {
+	border: 10px solid orange;
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.banner1 .team-wrapper h2 {	
+	color: orange;
+	font-size: 4em;
+	letter-spacing: 4px;
+	font-weight: 900;
+	text-shadow: 2px 2px #333;
+}
+.projects {
+	background-color: #EC9192;
+	/*height: 300px;*/
+	height: 100vh;
+}
+.project {
+	padding: 20px;
+	border-bottom: 1px solid #333;
+}
+.project * {
+	margin-bottom: 10px;
+}
+.project img {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-right: 20px;
+}
+
+.gallery {
+	background-color: orange;
+	/*height: 400px;*/
+	height: 100vh;
+}
+
+.gallery > .column {
+	width: 23%;
+	margin-left: 1%;
+	margin-right: 1%;
+	position: relative;
+}
+
+img[alt*="gallery"] {
+	border: 1px solid black;
+	width: 100%;
+	height: 150px;
+	display: block;
+}
+.footer {
+	background-color: #5D7C5E;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.footer small {
+	float: left;
+	margin-right: 50px;
+}
+.footer ul {
+	float: left;
+}
+.footer > ul > li {
+	list-style: none;
+	width: 50px;
+	float: left;
+	margin-right: 10px;
+}
+.footer > ul > li a {
+	padding: : 5px;
+	float: left;
+	color: #FFA500;
+}
+.footer > ul > li a:hover {
+	color: white;
+	text-shadow: 1px 1px black;
+}
+.footer > ul > li > a i {
+	font-size: 2em;
+}
+
